@@ -25,6 +25,11 @@
       "id": "5",
       "name": "Saúde",
       "color": "purple"
+    },
+    {
+      "id": "6",
+      "name": "Trabalho",
+      "color": "gray"
     }
   ]
 }
