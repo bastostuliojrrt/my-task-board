@@ -21,6 +21,6 @@ export class CategoryComponent {
     private readonly categoryService = inject(CategoryService);
 
     // Chamando o método getCategories do CategoryService, que retorna um Observable<Category[]>, e armazenando o resultado na variável categories$
-    public categories$ = this.categoryService.getCategories();
+    // public categories$ = this.categoryService.getCategories();
 
 }
