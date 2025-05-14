@@ -21,6 +21,34 @@ export class CategoryComponent {
     private readonly categoryService = inject(CategoryService);
 
     // Chamando o método getCategories do CategoryService, que retorna um Observable<Category[]>, e armazenando o resultado na variável categories$
-    // public categories$ = this.categoryService.getCategories();
+    public categories$ = this.categoryService.getCategories();
+
+
+    // ---------------------- SUBSCRIBE ----------------------
+
+    // Variável para armazenar a lista de categorias, que será utilizada para armazenar os dados retornados pela API
+    // public categories$ = [];
+
+    // // Método chamar a lista de categorias usando o subscribe
+    // public listCategories(){
+    //     this.categoryService.getCategories().subscribe({
+    //         next: (categories: any) => {
+    //           this.categories$ = categories;
+    //           console.log(categories);
+    //         },
+    //         error: (error: any) => {
+    //             console.error(error);
+    //         }
+    //     });
+    // }
+
+    // ngOnInit() {
+
+    //     // Chamando o método listCategories para listar as categorias
+    //     this.listCategories();
+
+    // }
+
+    // -----------------------------------------------------------
 
 }
