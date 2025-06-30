@@ -1,0 +1,37 @@
+// //Instalação do JEST
+
+// //1° - npm uninstall karma karma-chrome-launcher karma-coverage karma-jasmine karma-jasmine-html-reporter @types/jasmine jasmine-core
+
+// //2° - npm install --save-dev jest @types/jest @angular-builders/jest
+
+// //3° - No angular.json, substituir o builder do projeto para o seguinte:
+
+//     "test": {
+//       "builder": "@angular-builders/jest:run",
+//       "options": {
+//         "configPath": "./jest.config.js",
+//       }
+//     }
+
+// //4° - No package.json, na seção de scripts, adicionar o seguinte comando:
+
+//     "test:watch": "ng test --watch"
+
+// //5° - Criar o arquivo jest.config.js na raiz do projeto com o seguinte conteúdo:
+
+//     module.exports = {
+//         preset: 'jest-preset-angular',
+//         setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
+//     }
+
+// // 6° - Criar o arquivo de configuração setup-jest.ts na raiz do projeto com o seguinte conteúdo:
+
+//     import 'jest-preset-angular/setup-jest';
+
+// // 7° - Atualizar o arquivo tsconfig.json adicionar na seção "compilerOptions" a seguinte linha:
+
+//     "types": ["jest", "node"]
+
+// // 8° - No arquivo tsconfig.spec.json, adicionar a seguinte linha na seção "compilerOptions":
+
+//     "types": ["jest"]
